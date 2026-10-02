@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" role="img" aria-label="03 pi-walkman: Spotify Connect on a Raspberry Pi, drawn as a cassette whose reels spin with the music.">
+
+<style>
+  .fg { fill: #1f2328; } .mut { fill: #656d76; } .ln { stroke: #1f2328; } .bd { stroke: #d0d7de; }
+  @media (prefers-color-scheme: dark) {
+    .fg { fill: #e6edf3; } .mut { fill: #8d96a0; } .ln { stroke: #e6edf3; } .bd { stroke: #30363d; }
+  }
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .ln { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .ac { fill: #d97757; } .acl { stroke: #d97757; fill: none; stroke-width: 2; stroke-linecap: round; }
+  .reel { animation: spin 2.4s linear infinite; }@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+
+  <rect class="bd" x="1" y="1" width="418" height="178" rx="10" fill="none"/>
+  <g transform="translate(24 40)">
+  <rect class="ln" x="6" y="22" width="88" height="56" rx="5"/>
+  <rect class="ln" x="22" y="34" width="56" height="24" rx="12"/>
+  <g class="reel" style="transform-origin: 35px 46px"><circle class="ln" cx="35" cy="46" r="7"/><line class="acl" x1="35" y1="39" x2="35" y2="53"/></g>
+  <g class="reel" style="transform-origin: 65px 46px"><circle class="ln" cx="65" cy="46" r="7"/><line class="acl" x1="65" y1="39" x2="65" y2="53"/></g>
+  <path class="ln" d="M26 78 L32 68 H68 L74 78"/>
+  </g>
+  <text class="mut mono" x="150" y="48" font-size="12">03</text>
+  <text class="fg" x="150" y="76" font-size="18" font-weight="600">pi-walkman</text>
+  <text class="mut" x="150" y="104" font-size="13">Spotify Connect on a Raspberry Pi,</text>
+  <text class="mut" x="150" y="123" font-size="13">drawn as a cassette whose reels spin</text>
+  <text class="mut" x="150" y="142" font-size="13">with the music.</text>
+</svg>
