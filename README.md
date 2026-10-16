@@ -17,6 +17,8 @@ Small tools and devices, built with Claude Code and Codex.
 
 <a href="https://github.com/ysonggit/rgb-d-capture"><img src="assets/05-rgb-d-capture.svg" width="49%" alt="05 rgb-d-capture"></a> <a href="https://github.com/ysonggit/lean-tracker"><img src="assets/06-lean-tracker.svg" width="49%" alt="06 lean-tracker"></a>
 
+<a href="https://github.com/ysonggit/insomnia-ubuntu"><img src="assets/07-insomnia-ubuntu.svg" width="49%" alt="07 insomnia-ubuntu"></a>
+
 <br>
 
 <sub>[ysong.dev](https://ysong.dev)</sub>

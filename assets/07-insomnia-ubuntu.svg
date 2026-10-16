@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" role="img" aria-label="07 insomnia-ubuntu: Keeps an Ubuntu laptop awake for a set time, lid closed or not. An eye in the top bar counts down.">
+
+<style>
+  .fg { fill: #1f2328; } .mut { fill: #656d76; } .ln { stroke: #1f2328; } .bd { stroke: #d0d7de; }
+  @media (prefers-color-scheme: dark) {
+    .fg { fill: #e6edf3; } .mut { fill: #8d96a0; } .ln { stroke: #e6edf3; } .bd { stroke: #30363d; }
+  }
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .ln { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .ac { fill: #d97757; } .acl { stroke: #d97757; fill: none; stroke-width: 2; stroke-linecap: round; }
+  .blink { transform-box: fill-box; transform-origin: center; animation: blink 4s ease-in-out infinite; }@keyframes blink { 0%,88%,100% { transform: scaleY(1); } 93% { transform: scaleY(.08); } }
+</style>
+
+  <rect class="bd" x="1" y="1" width="418" height="178" rx="10" fill="none"/>
+  <g transform="translate(24 40)">
+  <g transform="translate(3 3) scale(3.9)" style="stroke-width:.55">
+  <g class="blink">
+  <path class="ln" style="stroke-width:.55" d="M1.5 12 C7 4.5 17 4.5 22.5 12 C17 19.5 7 19.5 1.5 12 Z"/>
+  <circle class="ac" cx="12" cy="12" r="4"/>
+  </g>
+  <path class="ln" style="stroke-width:.55" d="M4.55 6.2 L3.14 3.83 M8.26 4.62 L7.55 1.97 M12 4.13 L12 1.38 M15.74 4.62 L16.45 1.97 M19.45 6.2 L20.86 3.83"/>
+  </g>
+  </g>
+  <text class="mut mono" x="150" y="48" font-size="12">07</text>
+  <text class="fg" x="150" y="76" font-size="18" font-weight="600">insomnia-ubuntu</text>
+  <text class="mut" x="150" y="104" font-size="13">Keeps an Ubuntu laptop awake for a</text>
+  <text class="mut" x="150" y="123" font-size="13">set time, lid closed or not. An eye</text>
+  <text class="mut" x="150" y="142" font-size="13">in the top bar counts down.</text>
+</svg>

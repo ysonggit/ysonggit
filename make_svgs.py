@@ -62,6 +62,16 @@ ICONS = {
   <path class="acl trend" d="M14 26 L30 34 L42 30 L56 50 L68 46 L88 72" stroke-dasharray="110"/>""",
      ".trend { animation: draw 3.2s ease-in-out infinite; }"
      "@keyframes draw { 0% { stroke-dashoffset: 110; } 60%,90% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 110; } }"),
+    "insomnia": ("""
+  <g transform="translate(3 3) scale(3.9)" style="stroke-width:.55">
+  <g class="blink">
+  <path class="ln" style="stroke-width:.55" d="M1.5 12 C7 4.5 17 4.5 22.5 12 C17 19.5 7 19.5 1.5 12 Z"/>
+  <circle class="ac" cx="12" cy="12" r="4"/>
+  </g>
+  <path class="ln" style="stroke-width:.55" d="M4.55 6.2 L3.14 3.83 M8.26 4.62 L7.55 1.97 M12 4.13 L12 1.38 M15.74 4.62 L16.45 1.97 M19.45 6.2 L20.86 3.83"/>
+  </g>""",
+     ".blink { transform-box: fill-box; transform-origin: center; animation: blink 4s ease-in-out infinite; }"
+     "@keyframes blink { 0%,88%,100% { transform: scaleY(1); } 93% { transform: scaleY(.08); } }"),
 }
 
 PROJECTS = [
@@ -77,6 +87,8 @@ PROJECTS = [
      "Camera → vision model → human correction in the browser → labeled episodes."),
     ("06", "lean-tracker", "tracker",
      "Fasting, macros, training and skinfold body fat in one no-framework web app."),
+    ("07", "insomnia-ubuntu", "insomnia",
+     "Keeps an Ubuntu laptop awake for a set time, lid closed or not. An eye in the top bar counts down."),
 ]
 
 
