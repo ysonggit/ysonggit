@@ -97,7 +97,7 @@ PROJECTS = [
     ("07", "insomnia-ubuntu", "insomnia",
      "Keeps an Ubuntu laptop awake for a set time, lid closed or not. An eye in the top bar counts down."),
     ("08", "ipad-display-ubuntu", "ipad",
-     "An iPad as a second display for Ubuntu, like Sidecar. Safari only, touch input, over Wi-Fi or USB."),
+     "An iPad as a second display for Ubuntu, like Sidecar. One-click app, touch input, Wi-Fi or USB."),
 ]
 
 

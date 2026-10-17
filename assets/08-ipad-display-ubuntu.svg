@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" role="img" aria-label="08 ipad-display-ubuntu: An iPad as a second display for Ubuntu, like Sidecar. Safari only, touch input, over Wi-Fi or USB.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" role="img" aria-label="08 ipad-display-ubuntu: An iPad as a second display for Ubuntu, like Sidecar. One-click app, touch input, Wi-Fi or USB.">
 
 <style>
   .fg { fill: #1f2328; } .mut { fill: #656d76; } .ln { stroke: #1f2328; } .bd { stroke: #d0d7de; }
@@ -22,6 +22,6 @@
   <text class="mut mono" x="150" y="48" font-size="12">08</text>
   <text class="fg" x="150" y="76" font-size="18" font-weight="600">ipad-display-ubuntu</text>
   <text class="mut" x="150" y="104" font-size="13">An iPad as a second display for</text>
-  <text class="mut" x="150" y="123" font-size="13">Ubuntu, like Sidecar. Safari only,</text>
-  <text class="mut" x="150" y="142" font-size="13">touch input, over Wi-Fi or USB.</text>
+  <text class="mut" x="150" y="123" font-size="13">Ubuntu, like Sidecar. One-click app,</text>
+  <text class="mut" x="150" y="142" font-size="13">touch input, Wi-Fi or USB.</text>
 </svg>
