@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" role="img" aria-label="08 ipad-display-ubuntu: An iPad as a second display for Ubuntu, like Sidecar. Safari only, touch input, over Wi-Fi or USB.">
+
+<style>
+  .fg { fill: #1f2328; } .mut { fill: #656d76; } .ln { stroke: #1f2328; } .bd { stroke: #d0d7de; }
+  @media (prefers-color-scheme: dark) {
+    .fg { fill: #e6edf3; } .mut { fill: #8d96a0; } .ln { stroke: #e6edf3; } .bd { stroke: #30363d; }
+  }
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .ln { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .ac { fill: #d97757; } .acl { stroke: #d97757; fill: none; stroke-width: 2; stroke-linecap: round; }
+  .win { animation: move 4s ease-in-out infinite; }@keyframes move { 0%,20% { transform: translateX(0); } 50%,75% { transform: translateX(62px); } 100% { transform: translateX(0); } }
+</style>
+
+  <rect class="bd" x="1" y="1" width="418" height="178" rx="10" fill="none"/>
+  <g transform="translate(24 40)">
+  <rect class="ln" x="4" y="30" width="50" height="34" rx="3"/>
+  <path class="ln" d="M0 70 H58"/>
+  <rect class="ln" x="64" y="26" width="32" height="44" rx="4"/>
+  <rect class="ac win" x="10" y="38" width="16" height="12" rx="1.5"/>
+  </g>
+  <text class="mut mono" x="150" y="48" font-size="12">08</text>
+  <text class="fg" x="150" y="76" font-size="18" font-weight="600">ipad-display-ubuntu</text>
+  <text class="mut" x="150" y="104" font-size="13">An iPad as a second display for</text>
+  <text class="mut" x="150" y="123" font-size="13">Ubuntu, like Sidecar. Safari only,</text>
+  <text class="mut" x="150" y="142" font-size="13">touch input, over Wi-Fi or USB.</text>
+</svg>

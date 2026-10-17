@@ -72,6 +72,13 @@ ICONS = {
   </g>""",
      ".blink { transform-box: fill-box; transform-origin: center; animation: blink 4s ease-in-out infinite; }"
      "@keyframes blink { 0%,88%,100% { transform: scaleY(1); } 93% { transform: scaleY(.08); } }"),
+    "ipad": ("""
+  <rect class="ln" x="4" y="30" width="50" height="34" rx="3"/>
+  <path class="ln" d="M0 70 H58"/>
+  <rect class="ln" x="64" y="26" width="32" height="44" rx="4"/>
+  <rect class="ac win" x="10" y="38" width="16" height="12" rx="1.5"/>""",
+     ".win { animation: move 4s ease-in-out infinite; }"
+     "@keyframes move { 0%,20% { transform: translateX(0); } 50%,75% { transform: translateX(62px); } 100% { transform: translateX(0); } }"),
 }
 
 PROJECTS = [
@@ -89,6 +96,8 @@ PROJECTS = [
      "Fasting, macros, training and skinfold body fat in one no-framework web app."),
     ("07", "insomnia-ubuntu", "insomnia",
      "Keeps an Ubuntu laptop awake for a set time, lid closed or not. An eye in the top bar counts down."),
+    ("08", "ipad-display-ubuntu", "ipad",
+     "An iPad as a second display for Ubuntu, like Sidecar. Safari only, touch input, over Wi-Fi or USB."),
 ]
 
 
