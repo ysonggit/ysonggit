@@ -79,6 +79,21 @@ ICONS = {
   <rect class="ac win" x="10" y="38" width="16" height="12" rx="1.5"/>""",
      ".win { animation: move 4s ease-in-out infinite; }"
      "@keyframes move { 0%,20% { transform: translateX(0); } 50%,75% { transform: translateX(62px); } 100% { transform: translateX(0); } }"),
+    "teleop": ("""
+  <rect class="ln" x="30" y="10" width="40" height="18" rx="6"/>
+  <path class="ln" d="M50 28 V90 M34 90 H66" stroke-opacity=".35"/>
+""" + "".join(f"""  <g{t}>
+  <circle class="ln" cx="22" cy="19" r="6"/>
+  <path class="ln" d="M28 19 H30 M22 25 V49"/>
+  <circle class="ln" cx="22" cy="52" r="3"/>
+  <g class="goal"><path class="acl" stroke-dasharray="3 3" d="M22 55 V76 M17 76 H27 M17 76 V84 M27 76 V84"/></g>
+  <g class="arm"><path class="ln" d="M22 55 V76 M17 76 H27 M17 76 V84 M27 76 V84"/></g>
+  </g>
+""" for t in ("", ' transform="translate(100 0) scale(-1 1)"')),
+     ".goal, .arm { transform-origin: 22px 52px; }"
+     ".goal { animation: goal 6s infinite; } .arm { animation: arm 6s linear infinite; }"
+     "@keyframes goal { 0%,49.9% { transform: rotate(-40deg); } 50%,100% { transform: rotate(0); } }"
+     "@keyframes arm { 0%,5% { transform: rotate(0); } 40%,55% { transform: rotate(-40deg); } 90%,100% { transform: rotate(0); } }"),
 }
 
 PROJECTS = [
@@ -98,21 +113,24 @@ PROJECTS = [
      "Keeps an Ubuntu laptop awake for a set time, lid closed or not. An eye in the top bar counts down."),
     ("08", "ipad-display-ubuntu", "ipad",
      "An iPad as a second display for Ubuntu, like Sidecar. One-click app, touch input, Wi-Fi or USB."),
+    ("09", "openarm-teleop-sim", "teleop",
+     "OpenArm in MuJoCo, driven from a browser. Arms follow at a capped speed and hold if commands stop."),
 ]
 
 
 def card(num, name, icon, desc):
+    """A 280x210 card, sized for a three-column grid."""
     body, css = ICONS[icon]
-    lines = textwrap.wrap(desc, 36)
+    lines = textwrap.wrap(desc, 34)
     desc_svg = "\n".join(
-        f'  <text class="mut" x="150" y="{104 + i * 19}" font-size="13">{l}</text>' for i, l in enumerate(lines))
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" role="img" aria-label="{num} {name}: {desc}">
+        f'  <text class="mut" x="20" y="{144 + i * 19}" font-size="13">{l}</text>' for i, l in enumerate(lines))
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 210" role="img" aria-label="{num} {name}: {desc}">
 {STYLE % (ACCENT, ACCENT, css)}
-  <rect class="bd" x="1" y="1" width="418" height="178" rx="10" fill="none"/>
-  <g transform="translate(24 40)">{body}
+  <rect class="bd" x="1" y="1" width="278" height="208" rx="10" fill="none"/>
+  <g transform="translate(20 18) scale(.72)">{body}
   </g>
-  <text class="mut mono" x="150" y="48" font-size="12">{num}</text>
-  <text class="fg" x="150" y="76" font-size="18" font-weight="600">{name}</text>
+  <text class="mut mono" x="260" y="36" font-size="12" text-anchor="end">{num}</text>
+  <text class="fg" x="20" y="118" font-size="17" font-weight="600">{name}</text>
 {desc_svg}
 </svg>
 """

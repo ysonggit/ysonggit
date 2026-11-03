@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 210" role="img" aria-label="09 openarm-teleop-sim: OpenArm in MuJoCo, driven from a browser. Arms follow at a capped speed and hold if commands stop.">
+
+<style>
+  .fg { fill: #1f2328; } .mut { fill: #656d76; } .ln { stroke: #1f2328; } .bd { stroke: #d0d7de; }
+  @media (prefers-color-scheme: dark) {
+    .fg { fill: #e6edf3; } .mut { fill: #8d96a0; } .ln { stroke: #e6edf3; } .bd { stroke: #30363d; }
+  }
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .ln { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .ac { fill: #d97757; } .acl { stroke: #d97757; fill: none; stroke-width: 2; stroke-linecap: round; }
+  .goal, .arm { transform-origin: 22px 52px; }.goal { animation: goal 6s infinite; } .arm { animation: arm 6s linear infinite; }@keyframes goal { 0%,49.9% { transform: rotate(-40deg); } 50%,100% { transform: rotate(0); } }@keyframes arm { 0%,5% { transform: rotate(0); } 40%,55% { transform: rotate(-40deg); } 90%,100% { transform: rotate(0); } }
+</style>
+
+  <rect class="bd" x="1" y="1" width="278" height="208" rx="10" fill="none"/>
+  <g transform="translate(20 18) scale(.72)">
+  <rect class="ln" x="30" y="10" width="40" height="18" rx="6"/>
+  <path class="ln" d="M50 28 V90 M34 90 H66" stroke-opacity=".35"/>
+  <g>
+  <circle class="ln" cx="22" cy="19" r="6"/>
+  <path class="ln" d="M28 19 H30 M22 25 V49"/>
+  <circle class="ln" cx="22" cy="52" r="3"/>
+  <g class="goal"><path class="acl" stroke-dasharray="3 3" d="M22 55 V76 M17 76 H27 M17 76 V84 M27 76 V84"/></g>
+  <g class="arm"><path class="ln" d="M22 55 V76 M17 76 H27 M17 76 V84 M27 76 V84"/></g>
+  </g>
+  <g transform="translate(100 0) scale(-1 1)">
+  <circle class="ln" cx="22" cy="19" r="6"/>
+  <path class="ln" d="M28 19 H30 M22 25 V49"/>
+  <circle class="ln" cx="22" cy="52" r="3"/>
+  <g class="goal"><path class="acl" stroke-dasharray="3 3" d="M22 55 V76 M17 76 H27 M17 76 V84 M27 76 V84"/></g>
+  <g class="arm"><path class="ln" d="M22 55 V76 M17 76 H27 M17 76 V84 M27 76 V84"/></g>
+  </g>
+
+  </g>
+  <text class="mut mono" x="260" y="36" font-size="12" text-anchor="end">09</text>
+  <text class="fg" x="20" y="118" font-size="17" font-weight="600">openarm-teleop-sim</text>
+  <text class="mut" x="20" y="144" font-size="13">OpenArm in MuJoCo, driven from a</text>
+  <text class="mut" x="20" y="163" font-size="13">browser. Arms follow at a capped</text>
+  <text class="mut" x="20" y="182" font-size="13">speed and hold if commands stop.</text>
+</svg>
